@@ -1,23 +1,22 @@
 #include <stdio.h>
 
-int main (void)
-{	
-	char* name[5] ={
-	"int",
-	"long long int",
-	"long int",
-	"float",
-	"char"
-	};
-	int array[5];
-	array[0] = sizeof(int);
-        array[1] = sizeof(long long int);
-        array[2] = sizeof(long int); 
-        array[3] = sizeof(float);
-        array[4] = sizeof(char);
-	for (int i = 0; i < 5; i++)
-	{
-		printf("the size of %s is %d\n", name[i], array[i]);
-	}	
-	return 0;
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int a;
+	long int b;
+	long long int c;
+	char d;
+	float f;
+
+	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(d));
+	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
+	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
+	printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+	return (0);
 }

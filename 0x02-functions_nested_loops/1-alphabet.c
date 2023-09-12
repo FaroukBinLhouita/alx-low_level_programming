@@ -1,16 +1,18 @@
-#include <main.h>
-
+#include "main.h"
 /**
- * print_alphabet - print all alphapt from (a --> z)
- * Return: 0
+ * print_alphabet - wirte the the lower-case alphabet on a line.
+ *
+ *
+ *
  */
-int print_alphabet(void)
+void print_alphabet(void)
 {
-char ch = 'a';
-while (ch != 'z')
-{
-    _putchar('%c');
-    ch++;
+	char c;
+
+	for (c = 'a' ; c <= 'z' ; c++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
 }
-_putchar("/n");
-}
+

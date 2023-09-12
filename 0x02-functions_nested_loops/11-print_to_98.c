@@ -13,11 +13,11 @@ for (int i = n; i > 98; i--)
 {
 if (i != 98)
 {
-printf('%d, ', i);
+printf("%i, ", i);
 }
 else
 {
-printf('%d', i);
+printf("%i", i);
 }
 }
 }
@@ -28,15 +28,15 @@ for (int i = n; i < 98; ++i)
 {
 if (i != 98)
 {
-printf('%d, ', i);
+printf("%i, ", i);
 }
 else
 {
-printf('%d', i);
+printf("%i", i);
 }
 }
 }
 
-printf('98\n');
+printf("98\n");
 
 }

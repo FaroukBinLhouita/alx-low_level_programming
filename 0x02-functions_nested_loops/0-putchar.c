@@ -1,33 +1,28 @@
-#include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * main -  prints _putchar, followed by a new line
- * Return: Always 0 (Success)
- */
+* main - Entry point function
+* Description: 'first task practice on statemnts'
+* Return: 0
+*/
 int main(void)
 {
-<<<<<<< HEAD
-		char *c = "_putchar\n";
+int n;
 
-		while (*c)
-		{
-			_putchar('*c');
-			c++;
-		}
-		return (0);
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+if (n > 0)
+{
+printf("%d is positive\n", n);
 }
-
-=======
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
-
-	return (0);
+else if (n < 0)
+{
+printf("%d is negative\n", n);
 }
->>>>>>> 8686b60ae6c06176ac5d1d8591be78253acec9af
+else
+{
+printf("%d is zero\n", n);
+}
+return (0);
+}

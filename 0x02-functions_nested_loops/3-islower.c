@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-#include <main.h>
-
-/**
- * _islower -
- * @c: the charcter to check 
-=======
 #include "main.h"
 
 /**
@@ -15,11 +8,5 @@
  */
 int _islower(int c)
 {
-<<<<<<< HEAD
-    return (c >= 'a' && c <= 'z');
-}
-
-=======
 return (c >= 'a' && c <= 'z');
 }
->>>>>>> 8686b60ae6c06176ac5d1d8591be78253acec9af

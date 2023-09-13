@@ -11,20 +11,6 @@ int print_sign(int n)
 {
 if (n > 0)
 {
-<<<<<<< HEAD
-	_putchar('+');
-        return (1);
-}
-else if (n == 0)
-{
-	_putchar('0');
-        return (0)
-}
-else
-{
-	_putchar('-');
-        return (-1);
-=======
 _putchar('+');
 return (1);
 }
@@ -37,6 +23,5 @@ else
 {
 _putchar('-');
 return (-1);
->>>>>>> 8686b60ae6c06176ac5d1d8591be78253acec9af
 }
 }

@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-#include <main.h>
 
-/**
- * print_alphabet_x10 - prints the alower case ten times
- * Return: no return
-=======
 #include "main.h"
 
 /**
@@ -31,7 +25,3 @@ _putchar('\n');
 i++;
 }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 8686b60ae6c06176ac5d1d8591be78253acec9af

@@ -23,7 +23,3 @@ _putchar(a + '0');
 
 return (a);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 8686b60ae6c06176ac5d1d8591be78253acec9af

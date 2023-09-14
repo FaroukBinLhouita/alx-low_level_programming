@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * 
- * 
+ * print_most_numbers - prints numbers from 0 - 9 not 2 and 4
+ * Return: no return
  */
 void print_most_numbers(void)
 {

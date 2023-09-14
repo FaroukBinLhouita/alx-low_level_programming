@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - check is the it a digit or not
- * @n: the varabile who is checking
+ * @c: the varabile who is checking
  * Return: 1 if sucsses otherwise 1
  */
 int _isdigit(int c)

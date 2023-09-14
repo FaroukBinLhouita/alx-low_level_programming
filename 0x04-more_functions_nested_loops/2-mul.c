@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * mul - multiplies two integers
- * @a: the first var
- * @b: the sec
+ * mul - multiplies two integers.
+ * @a: first number.
+ * @b: second number.
+ * Return: multiplication.
  */
 int mul(int a, int b)
 {

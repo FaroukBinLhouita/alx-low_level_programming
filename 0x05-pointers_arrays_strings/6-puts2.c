@@ -9,10 +9,9 @@ void puts2(char *str)
 {
 int  i, sum = 0;
 
-while (*str != '\0')
+while (str[sum] != '\0')
 {
 sum++;
-str++;
 }
 
 for (i = 0; i < sum; i += 2)

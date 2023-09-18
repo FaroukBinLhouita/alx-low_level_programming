@@ -17,7 +17,7 @@ sum++;
 if (sum / 2 == 0)
 {
 divided = sum / 2;
-for (i = 0; i < sum; i++)
+for (i = 0; i <= divided; i++)
 {
 _putchar(str[divided + i]);
 }
@@ -26,7 +26,7 @@ else
 {
 sum--;
 divided = sum / 2;
-for (i = 0; i < (sum + 1); i++)
+for (i = 0; i <= (divided + 1); i++)
 {
 _putchar(str[divided + i]);
 }

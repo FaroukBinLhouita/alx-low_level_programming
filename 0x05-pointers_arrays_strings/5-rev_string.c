@@ -20,7 +20,7 @@ while (first < last)
 {
 char temp = *first;
 *first = *last;
-*last = *first;
+*last = temp;
 
 first++;
 last--;

@@ -14,10 +14,9 @@ sum++;
 str++;
 }
 
-int i;
-for (i = 0; i < (sum - 1); i+=2)
+for (int i = 0; i < (sum - 1); i+=2)
 {
-_putchar(str[i+2]);
+_putchar(str[i]);
 }
 _putchar('\n');
 }

@@ -16,19 +16,17 @@ sum++;
 
 if (sum % 2 == 0)
 {
-divided = sum / 2;
-for (i = 0; i < divided; i++)
+for (i = sum / 2; str[i] != '\0'; i++)
 {
-_putchar(str[divided + i]);
+_putchar(str[i]);
 }
 }
 else
 {
-sum--;
-divided = sum / 2;
-for (i = 0; i < (divided + 1); i++)
+for (i = (sum - 1) / 2; str[i] != '\0'; i++)
 {
-_putchar(str[divided + i]);
+_putchar(str[i]);
 }
 }
+_putchar('\n');
 }

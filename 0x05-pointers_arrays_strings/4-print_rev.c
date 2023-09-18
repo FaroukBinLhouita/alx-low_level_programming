@@ -7,14 +7,13 @@
 void print_rev(char *s)
 {
 int sum = 0;
+int i;
 
 while (*s != '\0')
 {
 sum++;
 s++;
 }
-
-int i;
 
 for (i = 0; i < sum; i++)
 {

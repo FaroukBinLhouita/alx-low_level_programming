@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts - print every two charchter one
+ * puts2 - print every two charchter one
  * @str: the string
  * Return: void
  */

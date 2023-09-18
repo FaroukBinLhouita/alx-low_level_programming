@@ -7,9 +7,11 @@
  */
 void _puts(char *str)
 {
-for (int i = 0; str[i] != '\0'; i++)
+int i = 0;
+while (str[i])
 {
 _putchar(str[i]);
+i++;
 }
 _putchar('\n');
 }

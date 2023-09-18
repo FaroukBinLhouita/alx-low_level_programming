@@ -3,7 +3,7 @@
 /**
  * _strlen - know the length of the string
  * @s: the string
- * Return: return a digit 
+ * Return: return a digit
  */
 int _strlen(char *s)
 {
@@ -13,5 +13,5 @@ while (*s != '\0')
 sum++;
 s++;
 }
-return sum;
+return (sum);
 }

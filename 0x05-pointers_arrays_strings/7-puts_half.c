@@ -7,7 +7,7 @@
  */
 void puts_half(char *str)
 {
-int divided, i, sum = 0;
+int i, sum = 0;
 
 while (str[sum] != '\0')
 {

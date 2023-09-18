@@ -7,8 +7,7 @@
  */
 void puts2(char *str)
 {
-int sum = 0;
-int i;
+int  i, sum = 0;
 
 while (*str != '\0')
 {
@@ -16,7 +15,7 @@ sum++;
 str++;
 }
 
-for (i = 0; i < (sum - 1); i += 2)
+for (i = 0; i < sum; i += 2)
 {
 _putchar(str[i]);
 }

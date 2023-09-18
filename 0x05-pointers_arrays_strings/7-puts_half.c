@@ -14,7 +14,7 @@ while (str[sum] != '\0')
 sum++;
 }
 
-if (sum / 2 == 0)
+if (sum % 2 == 0)
 {
 divided = sum / 2;
 for (i = 0; i < divided; i++)

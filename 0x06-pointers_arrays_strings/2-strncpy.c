@@ -9,21 +9,21 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-int firstSize = 0, secSize = 0;
+int size;
 
-while (dest[firstSize] != '\0')
+size = 0;
+
+while (src[size] != '\0' && size < n)
 {
-firstSize++;
+dest[size] = src[size];
+size++;
 }
 
-while (src[secSize] != '\0' && secSize < n)
+while (size < n)
 {
-dest[firstSize] = src[secSize];
-firstSize++;
-secSize++;
+dest[size] = '\0';
+size++;
 }
-
-dest[firstSize] = '\0';
 
 return (dest);
 }

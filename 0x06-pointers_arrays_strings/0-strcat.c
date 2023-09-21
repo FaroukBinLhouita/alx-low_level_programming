@@ -20,5 +20,8 @@ for (i = 0; src[i] != '\0'; i++)
 dest[firstSize] = src[i];
 firstSize++;
 }
-return dest;
+
+dest[firstSize] = '\0';
+
+return (dest);
 }

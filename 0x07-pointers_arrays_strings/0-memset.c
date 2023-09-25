@@ -5,7 +5,7 @@
  * @s: the string that return
  * @b: the charcter should save in the string
  * @n: bytes of the memory area
- * 
+ *
  * Return: return a string
  */
 char *_memset(char *s, char b, unsigned int n)

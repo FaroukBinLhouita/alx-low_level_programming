@@ -17,7 +17,6 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-
 for (first = 0; s1[first]; first++);
 for (last = 0; s2[last]; last++);
 

@@ -18,7 +18,6 @@ return (NULL);
 }
 
 for (i = 0; str[i] != '\0'; i++);
-
 tmp = malloc((i + 1) * sizeof(char));
 
 if (tmp == NULL)

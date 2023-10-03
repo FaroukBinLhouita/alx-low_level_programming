@@ -18,9 +18,11 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-for (first = 0; s1[first]; first++);
+for (first = 0; s1[first]; first++)
+;
 
-for (last = 0; s2[last]; last++);
+for (last = 0; s2[last]; last++)
+;
 
 s3 = malloc((first + last + 1) * sizeof(char));
 if (s3 == NULL)

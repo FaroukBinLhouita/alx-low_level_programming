@@ -9,24 +9,28 @@
 char *_strdup(char *str)
 {
 char *tmp;
+unsigned int i, len;
 
 if (str == NULL)
 {
 return (NULL);
 }
 
-while (*str != '\0')
+while (str[i])
 {
-*tmp = malloc(sizeof(char));
+i++;
+}
 
-if (*tmp == NULL)
+tmp = malloc( (i + 1) * sizeof(char));
+
+if (tmp == NULL)
 {
 return (NULL);
 }
 
-*tmp = *str;
-tmp++;
-str++;
+while ((tmp[len] == str[len]) != '\0')
+{
+len++;
 }
 
 return (tmp);

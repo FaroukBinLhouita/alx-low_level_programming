@@ -9,24 +9,24 @@
  */
 char *create_array(unsigned int size, char c)
 {
-        char *p;
-        unsigned int i;
-        if (size == 0)
-        {
-                return (NULL);
-        }
+char *p;
+unsigned int i;
+if (size == 0)
+{
+return (NULL);
+}
 
-        p = malloc(size * sizeof(char));
+p = malloc(size * sizeof(char));
 
-        if (p == NULL)
-        {
-                return (NULL);
-        }
+if (p == NULL)
+{
+return (NULL);
+}
 
-        for (i = 0; i < size; i++)
-        {
-                p[i] = c;
-        }
+for (i = 0; i < size; i++)
+{
+p[i] = c;
+}
 
-        return (p);
+return (p);
 }

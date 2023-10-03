@@ -2,9 +2,10 @@
 #include "main.h"
 
 /**
- * _strdup - make a copy of the string
- * @str: the main string
- * Return: a copy of string
+ * *_strdup - copies the string given as parameter
+ * @str: string to duplicate
+ *
+ * Return: pointer to the copied string (Success), NULL (Error)
  */
 char *_strdup(char *str)
 {
@@ -16,7 +17,7 @@ if (str == NULL)
 return (NULL);
 }
 
-while (str[i])
+while (str[i] != '\0')
 {
 i++;
 }

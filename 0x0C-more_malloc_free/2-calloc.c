@@ -1,19 +1,31 @@
-#include "main.h"
 #include <stdlib.h>
-
+#include "main.h"
 /**
- * free_grid - frees a 2 dimensional grid.
- * @grid: multidimensional array of integers.
- * @height: height of the grid.
- *
-* Return: no return
-*/
-void free_grid(int **grid, int height)
+  * _calloc - allocates memory of an array using malloc.
+  * @nmemb: number of elements in array.
+  * @size: size of elements of array.
+  *
+  * Return: NULL is size or nmemb == 0.
+  * NULL if malloc fails.
+  * Pointer to memory allocated if successful.
+  */
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-if (grid != NULL && height != 0)
+void *p;
+unsigned int i;
+
+if (nmemb == 0 || size == 0)
+return (NULL);
+p = malloc(nmemb * size);
+if (p == NULL)
 {
-for (; height >= 0; height--)
-free(grid[height]);
-free(grid);
+return (NULL);
 }
+
+for (i = 0; i < (nmemb * size); i++)
+{
+*((char *)(p) + i) = 0;
+}
+
+return (p);
 }

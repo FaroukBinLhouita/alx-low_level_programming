@@ -11,7 +11,7 @@ int len(*src)
 {
 int i;
 
-for (i = 0; name[i] != '\0'; i++)
+for (i = 0; src[i] != '\0'; i++)
 ;
 
 return (i)

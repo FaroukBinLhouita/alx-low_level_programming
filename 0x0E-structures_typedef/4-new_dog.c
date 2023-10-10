@@ -14,7 +14,7 @@ int i;
 for (i = 0; src[i] != '\0'; i++)
 ;
 
-return (i)
+return (i);
 }
 
 /**

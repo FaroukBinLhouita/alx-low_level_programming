@@ -25,6 +25,6 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 char *cpy(char *tmp, char *sru);
-int len(*src);
+int len(char *src);
 
 #endif

@@ -7,7 +7,7 @@
  *
  * Return: integer
  */
-int len(*src)
+int len(char *src)
 {
 int i;
 

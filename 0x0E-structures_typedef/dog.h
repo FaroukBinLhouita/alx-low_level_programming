@@ -1,3 +1,6 @@
+#ifndef DOG_H
+#define DOG_H
+
 /**
  * struct dog - a dog basic inofrmation
  * @name: first member

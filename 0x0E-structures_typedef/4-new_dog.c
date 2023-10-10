@@ -7,11 +7,11 @@
  *
  * Return: the length of the string
  */
-int len(char *src)
+int len(char *sr)
 {
 int i;
 
-for (i = 0; src[i] != '\0'; i++)
+for (i = 0; sr[i] != '\0'; i++)
 ;
 
 return i;
@@ -25,24 +25,19 @@ return i;
  *
  * Return: the pointer to dest
  */
-char *_strcpy(char *dest, char *src)
+char *cpy(char *tmp, char *src)
 {
 int len, i;
 
-len = 0;
+leng = len(src);
 
-while (src[len] != '\0')
+for (i = 0; i < leng; i++)
 {
-len++;
+tmp[i] = src[i];
 }
+tmp[i] = '\0';
 
-for (i = 0; i < len; i++)
-{
-dest[i] = src[i];
-}
-dest[i] = '\0';
-
-return (dest);
+return (tmp);
 }
 
 /**
@@ -58,8 +53,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 dog_t *dog;
 int len1, len2;
 
-len1 = _strlen(name);
-len2 = _strlen(owner);
+len1 = len(name);
+len2 = len(owner);
 
 dog = malloc(sizeof(dog_t));
 if (dog == NULL)
@@ -78,8 +73,8 @@ free(dog);
 free(dog->name);
 return (NULL);
 }
-_strcpy(dog->name, name);
-_strcpy(dog->owner, owner);
+cpy(dog->name, name);
+cpy(dog->owner, owner);
 dog->age = age;
 
 return (dog);

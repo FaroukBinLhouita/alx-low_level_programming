@@ -16,73 +16,71 @@ for (i = 0; src[i] != '\0'; i++)
 
 return i;
 }
-
 /**
- * cpy - copy the string
- * @tmp: the copy version
- * @sru: the source version
+ * *_strcpy - copies the string pointed to by src
+ * including the terminating null byte (\0)
+ * to the buffer pointed to by dest
+ * @dest: pointer to the buffer in which we copy the string
+ * @src: string to be copied
  *
- * Return: a copy
+ * Return: the pointer to dest
  */
-char *cpy(char *tmp, char *sru)
+char *_strcpy(char *dest, char *src)
 {
-if (tmp == NULL || sru == NULL)
-return NULL;
+int len, i;
 
-int j, leng;
+len = 0;
 
-leng = len(sru);
-for (j = 0; j < leng; j++)
+while (src[len] != '\0')
 {
-tmp[j] = sru[j];
+len++;
 }
 
-tmp[j] = '\0';
-return tmp;
+for (i = 0; i < len; i++)
+{
+dest[i] = src[i];
+}
+dest[i] = '\0';
+
+return (dest);
 }
 
 /**
- * new_dog - create a new dog
- * @name: the first member
- * @age: the second member
- * @owner: the third member
+ * new_dog - creates a new dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
  *
- * Return: return a new data struct of dog
+ * Return: pointer to the new dog (Success), NULL otherwise
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-if (name == NULL || owner == NULL)
-return NULL;
-
+dog_t *dog;
 int len1, len2;
-dog_t *d;
 
-len1 = len(name);
-len2 = len(owner);
+len1 = _strlen(name);
+len2 = _strlen(owner);
 
-d = malloc(sizeof(dog_t));
-if (d == NULL)
+dog = malloc(sizeof(dog_t));
+if (dog == NULL)
+return (NULL);
+
+dog->name = malloc(sizeof(char) * (len1 + 1));
+if (dog->name == NULL)
 {
-return NULL;
+free(dog);
+return (NULL);
 }
-
-d->name = malloc(sizeof(char) * (len1 + 1));
-if (d->name == NULL)
+dog->owner = malloc(sizeof(char) * (len2 + 1));
+if (dog->owner == NULL)
 {
-free(d);
-return NULL;
+free(dog);
+free(dog->name);
+return (NULL);
 }
+_strcpy(dog->name, name);
+_strcpy(dog->owner, owner);
+dog->age = age;
 
-d->owner = malloc(sizeof(char) * (len2 + 1));
-if (d->owner == NULL)
-{
-free(d->name);
-free(d);
-return NULL;
-}
-
-d->age = age;
-cpy(d->name, name);
-cpy(d->owner, owner);
-return d;
+return (dog);
 }

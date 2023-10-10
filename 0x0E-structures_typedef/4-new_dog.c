@@ -14,7 +14,7 @@ int i;
 for (i = 0; sr[i] != '\0'; i++)
 ;
 
-return i;
+return (i);
 }
 /**
  * *_strcpy - copies the string pointed to by src
@@ -27,7 +27,7 @@ return i;
  */
 char *cpy(char *tmp, char *src)
 {
-int len, i;
+int leng, i;
 
 leng = len(src);
 
@@ -66,6 +66,7 @@ if (dog->name == NULL)
 free(dog);
 return (NULL);
 }
+
 dog->owner = malloc(sizeof(char) * (len2 + 1));
 if (dog->owner == NULL)
 {
@@ -73,6 +74,7 @@ free(dog);
 free(dog->name);
 return (NULL);
 }
+
 cpy(dog->name, name);
 cpy(dog->owner, owner);
 dog->age = age;

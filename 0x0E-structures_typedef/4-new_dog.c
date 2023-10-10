@@ -26,6 +26,11 @@ return (i);
  */
 char *cpy(char *tmp, char *sru)
 {
+if (tmp == NULL || sru == NULL)
+{
+return (NULL);
+}
+
 int j, leng;
 
 leng = len(sru);
@@ -48,6 +53,11 @@ return (tmp);
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
+if (name == NULL || owner == NULL)
+{
+return (NULL);
+}
+
 int len1, len2;
 dog_t *d;
 
@@ -64,13 +74,13 @@ d->name = malloc(sizeof(char*) * (len1 + 1));
 if (d->name == NULL)
 {
 free(d);
-free(d->name);
 return (NULL);
 }
 
 d->owner = malloc(sizeof(char*) * (len2 + 1));
 if (d->owner == NULL)
 {
+free(d->name);
 free(d);
 return (NULL);
 }

@@ -53,6 +53,12 @@ dog_t *d;
 len1 = len(name);
 len2 = len(owner);
 
+d = malloc(sizeof(dog_t));
+if (d == NULL)
+{
+return (NULL);
+}
+
 d->name = malloc(sizeof(char*) * (len1 + 1));
 if (d->name == NULL)
 {

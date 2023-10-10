@@ -26,8 +26,9 @@ return (i)
  */
 char *cpy(char *tmp, char *sru)
 {
-int j, leng = len(sru);
+int j, leng;
 
+leng = len(sru);
 for (j = 0; j < leng; j++)
 {
 tmp[j] = sru[j];
@@ -63,6 +64,7 @@ d->name = malloc(sizeof(char*) * (len1 + 1));
 if (d->name == NULL)
 {
 free(d);
+free(d->name);
 return (NULL);
 }
 

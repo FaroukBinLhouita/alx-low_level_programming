@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * len - get lenght of the string
- * @src: the string
+ * len - calculate the length of a string
+ * @src: the input string
  *
- * Return: integer
+ * Return: the length of the string
  */
 int len(char *src)
 {
@@ -14,7 +14,7 @@ int i;
 for (i = 0; src[i] != '\0'; i++)
 ;
 
-return (i);
+return i;
 }
 
 /**
@@ -27,9 +27,7 @@ return (i);
 char *cpy(char *tmp, char *sru)
 {
 if (tmp == NULL || sru == NULL)
-{
-return (NULL);
-}
+return NULL;
 
 int j, leng;
 
@@ -40,23 +38,21 @@ tmp[j] = sru[j];
 }
 
 tmp[j] = '\0';
-return (tmp);
+return tmp;
 }
 
 /**
  * new_dog - create a new dog
- * @name : the first member
- * @age: the sec member
+ * @name: the first member
+ * @age: the second member
  * @owner: the third member
- * 
+ *
  * Return: return a new data struct of dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 if (name == NULL || owner == NULL)
-{
-return (NULL);
-}
+return NULL;
 
 int len1, len2;
 dog_t *d;
@@ -67,26 +63,26 @@ len2 = len(owner);
 d = malloc(sizeof(dog_t));
 if (d == NULL)
 {
-return (NULL);
+return NULL;
 }
 
-d->name = malloc(sizeof(char*) * (len1 + 1));
+d->name = malloc(sizeof(char) * (len1 + 1));
 if (d->name == NULL)
 {
 free(d);
-return (NULL);
+return NULL;
 }
 
-d->owner = malloc(sizeof(char*) * (len2 + 1));
+d->owner = malloc(sizeof(char) * (len2 + 1));
 if (d->owner == NULL)
 {
 free(d->name);
 free(d);
-return (NULL);
+return NULL;
 }
 
 d->age = age;
 cpy(d->name, name);
 cpy(d->owner, owner);
-return (d);
+return d;
 }

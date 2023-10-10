@@ -7,7 +7,7 @@
  * @name : the first member
  * @age: the sec member
  * @owner: the third member
- * 
+ *
  * Rerutn: void
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)

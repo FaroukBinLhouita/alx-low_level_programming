@@ -11,7 +11,7 @@ unsigned int i;
 
 if (!array || !action)
 {
-    return;
+return;
 }
 
 for (i = 0; i < size; i++)

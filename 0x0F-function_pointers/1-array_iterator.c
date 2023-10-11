@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-#include <Stdio.h>
+#include <stdlib.h>
 
 /**
  * array_iterator - take an array a function pointer and pass it by loop

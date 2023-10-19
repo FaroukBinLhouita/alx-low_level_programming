@@ -15,4 +15,5 @@ printf("[%ld] %s\n", strlen(h->str), h->str ? h->str : "(nil)");
 len++;
 h = h->next;
 }
+return (len);
 }

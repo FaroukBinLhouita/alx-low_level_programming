@@ -13,17 +13,17 @@ list_t *atfirst = malloc(sizeof(list_t));
 
 if (!head || !atfirst)
 {
-    return (NULL);
+return (NULL);
 }
 if (str)
 {
-    atfirst->str = strdup(str);
-    if (!atfirst->str)
-    {
-        free(atfirst);
-        return (NULL);
-    }
-    atfirst->len = strlen(atfirst->str);
+atfirst->str = strdup(str);
+if (!atfirst->str)
+{
+free(atfirst);
+return (NULL);
+}
+atfirst->len = strlen(atfirst->str);
 }
 atfirst->next = *head;
 *head = atfirst;

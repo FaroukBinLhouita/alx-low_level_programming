@@ -21,6 +21,6 @@ while (nextt)
 tmp = nextt->next;
 free(nextt->str);
 free(nextt);
-nextt = tmp
+nextt = tmp;
 }
 }

@@ -9,7 +9,7 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-list_t atfirst = malloc(sizeof(struct lists_t));
+list_t atfirst = malloc(sizeof(lists_t));
 
 if (!head || !atfirst)
 {
@@ -17,7 +17,7 @@ if (!head || !atfirst)
 }
 if (str)
 {
-    atfirst->str = srdup(str);
+    atfirst->str = strdup(str);
     if (!atfirst->str)
     {
         free(atfirst)

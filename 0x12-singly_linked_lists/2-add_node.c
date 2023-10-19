@@ -20,10 +20,10 @@ if (str)
     atfirst->str = strdup(str);
     if (!atfirst->str)
     {
-        free(atfirst)
+        free(atfirst);
         return (NULL);
     }
-    atfirst->len = srtlen(atfirst->str);
+    atfirst->len = strlen(atfirst->str);
 }
 atfirst->next = *head;
 *head = atfirst;

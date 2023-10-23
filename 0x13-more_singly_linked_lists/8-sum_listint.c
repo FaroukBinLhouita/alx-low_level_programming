@@ -2,7 +2,7 @@
 
 /**
  * sum_listint - sum the data
- * @head: the start pointe 
+ * @head: the start pointer
  *
  * Return: the sum of it
  */

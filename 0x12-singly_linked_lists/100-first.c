@@ -2,7 +2,7 @@
 
 /**
  * __attribute__ - run before main function
- *
+ * bmain - run before main function
  * Return: void
  */
 void __attribute__ ((constructor)) bmain()

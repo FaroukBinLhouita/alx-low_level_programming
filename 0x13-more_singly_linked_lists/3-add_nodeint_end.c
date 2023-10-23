@@ -23,7 +23,7 @@ if (!*head)
 }
 else
 {
-*move = *head;
+move = *head;
 while (move->next)
 {
 move = move->next;

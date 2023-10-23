@@ -29,11 +29,6 @@ while (move->next)
 move = move->next;
 }
 move->next = new_at_end;
-*new_at_end = NULL;
-}
-else
-{
-*head = new_at_end;
 }
 
 new_at_end->n = n;

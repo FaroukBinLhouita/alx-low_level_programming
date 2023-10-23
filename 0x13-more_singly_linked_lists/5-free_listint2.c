@@ -21,7 +21,7 @@ while (tmp)
 {
 next = tmp;
 tmp = tmp->next;
-free(tmp);
+free(next);
 }
 
 *head = NULL;

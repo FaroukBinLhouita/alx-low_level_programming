@@ -16,6 +16,7 @@ if (!head || !new_node)
 {
 return (NULL);
 }
+new_node->n = n;
 if (!idx)
 {
 new_node->next = *head;
@@ -29,12 +30,11 @@ if (i == idx - 1)
 {
 new_node->next = move->next;
 move->next = new_node;
-return (new_node)
+return (new_node);
 }
 i++;
 move = move->next;
 }
-
 free(new_node);
 return (NULL);
 }

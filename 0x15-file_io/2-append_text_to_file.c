@@ -16,11 +16,9 @@ if (!filename)
 return (-1);
 }
 
-if (len)
-{
 fd = open(filename, O_WRONLY | O_APPEND);
 w = write(fd, text_content, len);
-}
+
 
 close(fd);
 return (1);

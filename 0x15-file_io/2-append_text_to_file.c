@@ -18,6 +18,10 @@ return (-1);
 
 fd = open(filename, O_WRONLY | O_APPEND);
 out_put = write(fd, text_content, len);
+
+if (fd == -1 || out_put == -1)
+return (-1);
+
 close(fd);
 return (1);
 }

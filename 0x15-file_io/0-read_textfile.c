@@ -20,7 +20,7 @@ return (0);
 str = malloc(sizeof(char) * letters);
 fd = open(filename, O_RDONLY);
 
-if (!buff || fd < 0)
+if (!str || fd < 0)
 {
 return (0);
 }

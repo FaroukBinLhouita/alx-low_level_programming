@@ -11,7 +11,7 @@ int create_file(const char *filename, char *text_content)
 int fd;
 ssize_t count, len = strlen(text_content);
 
-if (!filename)
+if (!filename || !len)
 {
 return (-1);
 }
@@ -21,11 +21,7 @@ if (fd == -1)
 return (-1);
 }
 
-if (len)
-{
 count = write(fd, text_content, len);
-}
-
 close(fd);
 return (count == len ? 1 : -1);
 }

@@ -8,7 +8,7 @@
  * Retrun: 0 if success otherwise -1
  */
 ssize_t read_textfile(const char *filename, size_t letters)
-{ 
+{
 ssize_t fd, count;
 char *str;
 

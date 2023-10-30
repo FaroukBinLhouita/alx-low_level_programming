@@ -21,9 +21,10 @@ if (fd < 0)
 {
 return (-1);
 }
+
 if (len)
 {
-    count = write(fd, text_content, len)
+count = write(fd, text_content, len);
 }
 
 close(fd);

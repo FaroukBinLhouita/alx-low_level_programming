@@ -25,12 +25,7 @@ if (!str || fd < 0)
 return (0);
 }
 
-count = read(fd, str, letters);
-if (count < 0)
-{
-return (0);
-}
-count = write(STDOUT_FILENO, str, count);
+count = write(STDOUT_FILENO, str, read(fd, str, letters));
 if (count < 0)
 return (0);
 
